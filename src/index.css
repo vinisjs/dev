@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add all new fonts and add to tailwindcss.config.js
+ Univers-ligth-normal.ttf, 
+ UniversBlack, 
+ UniversLTStd-Bold,UniversLTStd 
+in folder public/fonts*/
+
+@font-face {
+  font-family: 'Univers-ligth-normal';
+  src: url('/fonts/Univers-ligth-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniversBlack';
+  src: url('/fonts/UniversBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniversLTStd-Bold';
+  src: url('/fonts/UniversLTStd-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniversLTStd';
+  src: url('/fonts/UniversLTStd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
