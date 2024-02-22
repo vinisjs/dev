@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 type ButtonProps = {
     label: string;
     icon?: React.ReactNode;
     to: string;
-    center?: true | false;
-}
+    center?: boolean;
+};
 
 export function Button({ label, icon, to, center = false }: ButtonProps) {
     return (
@@ -14,9 +14,9 @@ export function Button({ label, icon, to, center = false }: ButtonProps) {
             to={to}
         >
             <div className={`flex items-center gap-2 text-zinc-300 hover:text-emerald-400 ${center ? 'justify-center' : ''}`}>
-                <p className="">{icon}</p>
+                {icon && <span>{icon}</span>}
                 <p className="text-sm ">{label}</p>
             </div>
         </Link>
-    )
+    );
 }

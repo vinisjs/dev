@@ -1,13 +1,15 @@
 type CardProps = {
   title?: string
   content?: string
+  children?: any;
 }
 
-export function Card({ title, content }: CardProps) {
+export function Card({ children, title, content }: CardProps) {
   return (
-    <section className="bg-zinc-700 px-2 py-4">
+    <section className="flex flex-col justify-between bg-zinc-700/60 px-3 py-4 space-y-2 text-justify">
       <h2 className="text-xl font-bold">{title}</h2>
       <p>{content}</p>
+      {children}
     </section>
   )
 }
